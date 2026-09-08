@@ -1,9 +1,10 @@
-# class student:
-#     sub='english'
-#     college='srist'
+class student:
+    sub='english'
+    college='srist'
 
-# stu1=student()
-# stu2=student()
+stu1=student()
+stu2=student()
+print(stu1.sub,stu2.sub)
 
 '''using init methode in class and the object'''
 class employe:
