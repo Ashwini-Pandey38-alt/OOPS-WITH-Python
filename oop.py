@@ -15,17 +15,18 @@
 # emply2=('mohit',60000)
 # print(emply1,emply2)
 
-''' using instance method '''
-class student :
-    def __init__( self,name,cgpa):
-        self.name = name 
-        self.cgpa = cgpa
+# ''' using instance method '''
+# class student :
+#     def __init__( self,name,cgpa):
+#         self.name = name 
+#         self.cgpa = cgpa
 
-    def get_cgpa(self):
-        return self
+#     def get_cgpa(self):
+#         return self
 
-stu1=student('rahul',8.2)
-stu2=student('akash',8.7)
+# stu1=student('rahul',8.2)
+# stu2=student('akash',8.7)
 
-print(stu1.get_cgpa())
+# print(stu1.get_cgpa())
+
 
