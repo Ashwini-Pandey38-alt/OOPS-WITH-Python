@@ -85,3 +85,5 @@ class student:
 st=student('ashwi',12)
 
 print(st.name)
+
+
