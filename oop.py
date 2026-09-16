@@ -129,3 +129,16 @@
 # print(Student.school)                 # XYZ School
 # print(Student.is_adult(student1.age)) # True
 
+
+''' creating a online store for the products(name,price)'''
+
+class product:
+    def __init__(self,name,price):
+        self.name=name
+        self.price=price
+    def data(self):
+        return(f" name of product {self.name},price{self.price}")
+
+    
+p2=product('ram',45)
+print(p2.data())
