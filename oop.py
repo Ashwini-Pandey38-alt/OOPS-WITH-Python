@@ -105,3 +105,26 @@ stu2=student('solo',12)
 
 stu2.colg('kvs')
 print(stu2.college_name)
+
+'''using staticmethod'''
+class Student:
+    school = "ABC School"
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    @classmethod
+    def change_school(cls, new_school):
+        cls.school = new_school
+
+    @staticmethod
+    def is_adult(age):
+        return age >= 18
+
+
+student1 = Student("Rahul", 20)
+
+Student.change_school("XYZ School")
+print(Student.school)                 # XYZ School
+print(Student.is_adult(student1.age)) # True
