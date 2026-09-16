@@ -87,3 +87,21 @@ st=student('ashwi',12)
 print(st.name)
 
 
+'classmethod practice'
+class student:
+    college_name='asd'
+    def __init__ (self,name,clas):
+        self.name=name
+        self.clas=clas
+    def ix (self):
+        print('e')
+    @classmethod
+    def colg(cls,college_name):
+        cls.college_name=college_name
+        print(cls.college_name)
+
+        
+stu2=student('solo',12)
+
+stu2.colg('kvs')
+print(stu2.college_name)
