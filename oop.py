@@ -66,3 +66,22 @@ s1 = Student("Ashwini")
 
 s1.show_name()                      # Output: Student Name: Ashwini
 Student.change_school("XYZ School") # Modifies class variable globally
+
+
+'''above decoreter @classmethod is used to peform thhe proper work of the (cls )'''
+
+
+
+''''init method is canot be used more then one time in a class '''
+class student:
+    college_name='asd'
+    def __init__ (self,name,clas):# if we use ix in place of init then we have to call it manually
+        self.name=name
+        self.clas=clas
+    def ix (self):
+        print('e')
+
+        
+st=student('ashwi',12)
+
+print(st.name)
