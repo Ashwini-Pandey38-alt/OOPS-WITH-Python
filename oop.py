@@ -166,3 +166,25 @@ p3=product('loko',45)
 p4=product('water bottel',100)
 product.info()
 
+
+
+'''code to claculate the max discount in the product'''
+class product:
+
+    count=0
+    def __init__(self,name,price):
+        self.name=name
+        self.price=price
+        product.count+=1
+    def data(self):
+        return(f" name of product {self.name},price{self.price}")
+    @classmethod
+    def info(cls):
+        return f" no. of product is made{cls.count}"
+    @staticmethod
+    def get_dic( price,percentage):
+        return f" discount={price-(price*percentage)}"
+
+    
+product.get_dic(2000,2)
+' discount=-2000'
