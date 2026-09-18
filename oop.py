@@ -213,5 +213,15 @@ class banks:
     def __init__(self,name,balance):
         self.name=name 
         self.__balance=balance #private
-        
+
+
+
+#DIFFERENT WAY TO ACCESS THE PROTECTED AND THE PRIVATE DATA
+# FOR THE PROTECTED DATA
+print("object_name._DataName")
+
+# FOR THE PRIVATE DATA
+
+print("object_name.classname__DataName")
+
     
