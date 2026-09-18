@@ -224,4 +224,15 @@ print("object_name._DataName")
 
 print("object_name.classname__DataName")
 
+#REAL way to access the private data
+"""GETTER AND SETTER METHOD"""
+class banks:
+    def __init__(self,name,balance):
+        self.name=name 
+        self.__balance=balance #private
+    def gett(self):
+        return self.__balance
+    def setter(self,new):
+        self.__balance=new
+
     
