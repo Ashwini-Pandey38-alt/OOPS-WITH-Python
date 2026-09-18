@@ -235,4 +235,28 @@ class banks:
     def setter(self,new):
         self.__balance=new
 
-    
+
+
+
+#INHERETANCE
+
+class school:
+    def __init__(self,name,location):
+        self.name=name
+        self.location=location
+
+
+        
+class teacher(school):
+    def __init__(self,nam,salary,name,location):
+        super().__init__(name,location)
+        self.nam=nam
+        self.salary=salary
+
+        
+teacher('rahul',20000,'kf','sk')
+
+p=teacher('rahul',20000,'kf','sk')
+print(p.name)
+#kf
+        
