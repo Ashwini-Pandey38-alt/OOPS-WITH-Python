@@ -239,7 +239,7 @@ class banks:
 
 
 #INHERETANCE
-
+#single level inheretence
 class school:
     def __init__(self,name,location):
         self.name=name
@@ -260,3 +260,22 @@ p=teacher('rahul',20000,'kf','sk')
 print(p.name)
 #kf
         
+
+''' multi level inheretence'''
+class teacher(school):
+    def __init__(self,nam,salary,name,location):
+        super().__init__(name,location)
+        self.nam=nam
+        self.salary=salary
+
+        
+
+        
+class student(teacher):
+    def __init__(self,na,nam,salary,name,location):
+        super().__init__(nam,salary,name,location)
+        self.na=na
+
+        
+o=student('s','ss','sss','ssss','sssss')
+print(o.salary)
