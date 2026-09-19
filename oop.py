@@ -306,3 +306,33 @@ class school(teacher,stu):
 y=school("dd",200000,9.3)
 print(y.cgpa)
 #9.3
+
+
+
+
+#ABSTRACTION
+from abc import ABC ,abstractmethod
+class animal (ABC):
+    @abstractmethod
+    def make_sound(self):
+        pass
+
+
+
+class loin (animal):
+    def make_sound(self):
+        print('rooooooooorrrrrrrr')
+
+        
+t=loin()
+print(t)
+t.make_sound()
+#rooooooooorrrrrrrr
+class cow(animal):
+    def make_sound(self):
+        print('mooooooooooooooooooooooooooooooooo')
+
+        
+u=cow()
+u.make_sound()
+#moooooooooooooooooooooooooooooooo
