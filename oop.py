@@ -300,7 +300,7 @@ class stu:
 class school(teacher,stu):
     def __init__(self,name,salary,cgpa):
         super().__init__(name,salary)
-        stu.__init__(self,cgpa)
+        stu.__init__(self,cgpa)# second time did not have to use the super() function
 
         
 y=school("dd",200000,9.3)
@@ -309,8 +309,7 @@ print(y.cgpa)
 
 
 
-
-#ABSTRACTION
+#abstraction
 from abc import ABC ,abstractmethod
 class animal (ABC):
     @abstractmethod
