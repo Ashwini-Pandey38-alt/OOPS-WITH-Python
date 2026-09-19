@@ -335,3 +335,30 @@ class cow(animal):
 u=cow()
 u.make_sound()
 #moooooooooooooooooooooooooooooooo
+
+
+
+
+
+#Polymorphism
+#1.function overloading
+
+
+
+class teacher:                                   
+    def postion(self):
+        print('work as teacher')
+
+class stu:
+    def postion(self):
+        print('study as an the student')
+
+#2.duck typing
+
+class teacher:                                   
+    def postion(self):
+        print('work as teacher')
+
+class stu:
+    def postion(self):
+        print('study as an the student')
