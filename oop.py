@@ -362,3 +362,27 @@ class teacher:
 class stu:
     def postion(self):
         print('study as an the student')
+
+
+
+
+'''. Create a bankaccount class with account no.,owner name,balance
+add also use methods like DEPOSIT,WITHDROW,CHECK BALANCE'''
+
+
+class bankaccount:
+    def __init__(self,account_number,owner_name,balance):
+        self.account_number=account_number
+        self.owner_name=owner_name
+        self.balance=balance
+    def deposit(self,nbalance):
+        self.balance=self.balance+nbalance
+    def withdrow(self,wanted):
+        self.balance=self.balance-wanted
+    def check_balance(self):
+        print('present_balance=',self.balance)
+
+        
+t=bankaccount(20000332,'ashwini',200_0000)
+t.check_balance()
+#present_balance= 2000000
