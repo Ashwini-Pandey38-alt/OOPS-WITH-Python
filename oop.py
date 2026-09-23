@@ -395,3 +395,28 @@ And add methods to:
 add a new review 
 count reviews 
 display all reviews'''
+class book:
+    count=0
+    def __init__(self,title,auther, reviews,number_of_reviews):
+        self.title=title
+        self.auther=auther
+        self.reviews=reviews
+        self.count=number_of_reviews
+
+    def add(self,N,number_of_reviews):
+        self.reviews= self.reviews+N
+        self.count=self.count+number_of_reviews
+
+    def cont(self):
+        print(  self.count )
+    def dis(self):
+        print(self.reviews)
+
+        
+t=book('s','ss','sss',1)
+t.add('----hello',1)
+t.cont()
+#2
+t.dis()
+#sss----hello
+
