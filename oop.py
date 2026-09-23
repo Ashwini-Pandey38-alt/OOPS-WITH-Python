@@ -387,36 +387,47 @@
 # t.check_balance()
 # #present_balance= 2000000
 
-'''Create a class BOOK with the following attributes:
-title 
-author 
-list of reviews
-And add methods to: 
-add a new review 
-count reviews 
-display all reviews'''
-class book:
-    count=0
-    def __init__(self,title,auther, reviews,number_of_reviews):
-        self.title=title
-        self.auther=auther
-        self.reviews=reviews
-        self.count=number_of_reviews
+# '''Create a class BOOK with the following attributes:
+# title 
+# author 
+# list of reviews
+# And add methods to: 
+# add a new review 
+# count reviews 
+# display all reviews'''
+# class book:
+#     count=0
+#     def __init__(self,title,auther, reviews,number_of_reviews):
+#         self.title=title
+#         self.auther=auther
+#         self.reviews=reviews
+#         self.count=number_of_reviews
 
-    def add(self,N,number_of_reviews):
-        self.reviews= self.reviews+N
-        self.count=self.count+number_of_reviews
+#     def add(self,N,number_of_reviews):
+#         self.reviews= self.reviews+N
+#         self.count=self.count+number_of_reviews
 
-    def cont(self):
-        print(  self.count )
-    def dis(self):
-        print(self.reviews)
+#     def cont(self):
+#         print(  self.count )
+#     def dis(self):
+#         print(self.reviews)
 
         
-t=book('s','ss','sss',1)
-t.add('----hello',1)
-t.cont()
-#2
-t.dis()
-#sss----hello
+# t=book('s','ss','sss',1)
+# t.add('----hello',1)
+# t.cont()
+# #2
+# t.dis()
+# #sss----hello
 
+'''Create a class  with  attributes _name, _roll_no, and _marks.
+Provide  and  methods with validation (e.g., marks cannot be 
+negative, roll number has to be between 1 & 100 & name cannot be empty)'''
+class kaksha :
+    def  __init__(self , name ,rollno ,marks):
+        self.name=name
+        self.rollno=rollno
+        self.__marks=marks
+    def get(self):
+        print(self.__mark)
+    
