@@ -424,10 +424,32 @@
 Provide  and  methods with validation (e.g., marks cannot be 
 negative, roll number has to be between 1 & 100 & name cannot be empty)'''
 class kaksha :
+
     def  __init__(self , name ,rollno ,marks):
         self.name=name
         self.rollno=rollno
         self.__marks=marks
-    def get(self):
-        print(self.__mark)
+    def get(self):     # getter and the setter method for the marks
+        print(self.__marks)
+    def setter (self):
+        if self.__marks>=0:
+            print(self.__marks)
+        else:
+            print ('marks cannot be the negative number ')
+    def getter(self):     # getter and the setter method for the roll number
+        print(self.rollno)
+    def sette(self):
+        if self.rollno>=1 and self.rollno<=100:
+            print(self.rollno)
+        else:
+            print ('rollnumer is not between 1 and 100')
+    def gett(self):     # getter and the setter method for the name
+        print(self.name)
+    def sett(self):
+        if self.name=="":
+
+            print('name cannot be an empty')
+        else:
+            print (self.name)
+
     
