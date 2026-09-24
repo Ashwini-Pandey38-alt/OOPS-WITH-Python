@@ -454,27 +454,40 @@ negative, roll number has to be between 1 & 100 & name cannot be empty)'''
 
 
 
-'''Create a class shape with a method area().
-Create subclasses circle , rectangle , and triangle  that  overraid the area() 
-method.
-'''
-class shape:
-    def area(length,breath):
-        print('area of the shape is ',length*breath)
+# '''Create a class shape with a method area().
+# Create subclasses circle , rectangle , and triangle  that  overraid the area() 
+# method.
+# '''
+# class shape:
+#     def area(length,breath):
+#         print('area of the shape is ',length*breath)
 
-class circle(shape):
-    def area(radius):
-        print(3.14*(radius**2))
+# class circle(shape):
+#     def area(radius):
+#         print(3.14*(radius**2))
 
-class rectangle (shape):
-    def area(length,breath):
-        print('area of the rectangle is ',length*breath)
+# class rectangle (shape):
+#     def area(length,breath):
+#         print('area of the rectangle is ',length*breath)
 
 
-class triangle(shape):
+# class triangle(shape):
 
-    def area(length,breath):
-        print('area of the shape is ',0.5(length*breath))
+#     def area(length,breath):
+#         print('area of the shape is ',0.5(length*breath))
 
-t=shape(20,30)
-t.area()
+# t=shape(20,30)
+# t.area()
+
+
+
+'''WAP to search the word in file '''
+
+with open ('sample.txt','r') as f:
+    line=1
+    while True :
+        data = f.readline()
+        if ('python'in data):
+            print('word is found at the line',line)
+        line+=1
+
