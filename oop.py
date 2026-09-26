@@ -231,9 +231,9 @@
 #         self.name=name 
 #         self.__balance=balance #private
 #     def gett(self):
-#         return self.__balance
-#     def setter(self,new):
-#         self.__balance=new
+# #         return self.__balance
+# #     def setter(self,new):
+# #         self.__balance=new
 
 
 
@@ -340,8 +340,8 @@
 
 
 
-# #Polymorphism
-# #1.function overloading
+# Polymorphism
+# 1.function overloading
 
 
 
@@ -420,9 +420,9 @@
 # t.dis()
 # #sss----hello
 
-'''Create a class  with  attributes _name, _roll_no, and _marks.
-Provide  and  methods with validation (e.g., marks cannot be 
-negative, roll number has to be between 1 & 100 & name cannot be empty)'''
+# '''Create a class  with  attributes _name, _roll_no, and _marks.
+# Provide  and  methods with validation (e.g., marks cannot be 
+# negative, roll number has to be between 1 & 100 & name cannot be empty)'''
 # class kaksha :
 
 #     def  __init__(self , name ,rollno ,marks):
@@ -454,40 +454,89 @@ negative, roll number has to be between 1 & 100 & name cannot be empty)'''
 
 
 
-# '''Create a class shape with a method area().
-# Create subclasses circle , rectangle , and triangle  that  overraid the area() 
-# method.
-# '''
+# '''Create a class shape with a method area().'''
+# # Create subclasses circle , rectangle , and triangle  that  overraid the area() 
+# # method.
+# # 
 # class shape:
-#     def area(length,breath):
-#         print('area of the shape is ',length*breath)
+#     def __init__(self ,length,breadth):
 
+#         self.length=length
+#         self.breadth=breadth
+
+        
 # class circle(shape):
-#     def area(radius):
-#         print(3.14*(radius**2))
+#     def __init__(self ,radius):
+#         self.radius=radius
+#     def area (self):
+#         print(3.14*(self.radius**2))
 
-# class rectangle (shape):
-#     def area(length,breath):
-#         print('area of the rectangle is ',length*breath)
+
+# class rectangle(shape):
+#     def __init__(self,length,breadth):
+#         super().__init__(length,breadth)
+#     def area(self):
+#         print(self.length*self.breadth)
 
 
 # class triangle(shape):
-
-#     def area(length,breath):
-#         print('area of the shape is ',0.5(length*breath))
-
-# t=shape(20,30)
-# t.area()
+#     def __init__(self,length,breadth):
+#         super().__init__(length,breadth)
+#     def area(self):
+#         print(0.5*(self.length*self.breadth))
 
 
+# o=circle(5)
+# o.area()
 
-'''WAP to search the word in file '''
+# o=rectangle(20,30)
+# o.area()
 
-with open ('sample.txt','r') as f:
-    line=1
-    while True :
-        data = f.readline()
-        if ('python'in data):
-            print('word is found at the line',line)
-        line+=1
+# o=triangle(20,30)
+# o.area()
 
+
+
+
+# #WAP to search the word in file
+
+# with open ('sample.txt','r') as f:
+#     line=1
+#     while True :
+#         data = f.readline()
+#         if ('python'in data):
+#             print('word is found at the line',line)
+#         line+=1
+
+
+'''5 base
+Vehicle
+subclasses
+Car Bike
+. Create a  class  with attributes like brand and model.
+Create two  and  that add extra attributes - seats (in Car) & 
+engine_cc (in Bike)'''
+
+class vehicle:
+    def __init__(self,brand,modle):
+        self.brand=brand
+        self.modle=modle
+
+class car(vehicle):
+    
+    def __init__(self,brand,modle ,seats):
+        super().__init__(brand,modle)
+        self.seats=seats
+
+class bike(vehicle):
+    
+    def __init__(self,brand,modle ,engine):
+        super().__init__(brand,modle)
+        self.engine=engine
+
+x = vehicle("Toyota","Alcazar")
+y= car("Toyota","Alcazar","4 Seater")
+print(y.brand)
+print(x.modle)
+print(y.seats)
+print(x.modle)
