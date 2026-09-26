@@ -509,34 +509,34 @@
 #         line+=1
 
 
-'''5 base
-Vehicle
-subclasses
-Car Bike
-. Create a  class  with attributes like brand and model.
-Create two  and  that add extra attributes - seats (in Car) & 
-engine_cc (in Bike)'''
+# '''5 base
+# Vehicle
+# subclasses
+# Car Bike
+# . Create a  class  with attributes like brand and model.
+# Create two  and  that add extra attributes - seats (in Car) & 
+# engine_cc (in Bike)'''
 
-class vehicle:
-    def __init__(self,brand,modle):
-        self.brand=brand
-        self.modle=modle
+# class vehicle:
+#     def __init__(self,brand,modle):
+#         self.brand=brand
+#         self.modle=modle
 
-class car(vehicle):
+# class car(vehicle):
     
-    def __init__(self,brand,modle ,seats):
-        super().__init__(brand,modle)
-        self.seats=seats
+#     def __init__(self,brand,modle ,seats):
+#         super().__init__(brand,modle)
+#         self.seats=seats
 
-class bike(vehicle):
+# class bike(vehicle):
     
-    def __init__(self,brand,modle ,engine):
-        super().__init__(brand,modle)
-        self.engine=engine
+#     def __init__(self,brand,modle ,engine):
+#         super().__init__(brand,modle)
+#         self.engine=engine
 
-x = vehicle("Toyota","Alcazar")
-y= car("Toyota","Alcazar","4 Seater")
-print(y.brand)
-print(x.modle)
-print(y.seats)
-print(x.modle)
+# x = vehicle("Toyota","Alcazar")
+# y= car("Toyota","Alcazar","4 Seater")
+# print(y.brand)
+# print(x.modle)
+# print(y.seats)
+# print(x.modle)
