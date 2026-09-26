@@ -540,3 +540,48 @@
 # print(x.modle)
 # print(y.seats)
 # print(x.modle)
+
+'''WAO TO CALCULATE THE SALARY OF DIFFERENT EMPLOYEE'''
+class employee:
+    def __init__(self,inhand_salary,gst):
+        self.inhand_salary=inhand_salary
+        self.gst=gst
+    def cal_salary(self):
+        print("THE CALCULATED AMOUNT OF THE SALARY IS =====",self.inhand_salary-self.gst)
+
+class intern(employee):
+    def __init__(self,inhand_salary,gst):
+        super().__init__(inhand_salary,gst)
+
+    def cal_salary(self):
+            print("THE CALCULATED AMOUNT OF THE SALARY IS =====",self.inhand_salary-self.gst)
+
+
+
+
+class fulltimeemployee(employee):
+    def __init__(self,inhand_salary,gst,bonus,overtime,traveling_amount):
+        
+        super().__init__(inhand_salary,gst)
+        self.bonus=bonus
+        self.overtime=overtime
+        self.traveling_amount=traveling_amount
+
+    def cal_salary(self):
+            print("THE CALCULATED AMOUNT OF THE SALARY IS =====",self.inhand_salary-self.gst+self.bonus+self.overtime+self.traveling_amount)
+
+
+
+class contractbased(employee):
+    def __init__(self,inhand_salary,gst,bonus):
+
+        super().__init__(inhand_salary,gst)
+        self.bonus=bonus
+
+    def cal_salary(self):
+            print("THE CALCULATED AMOUNT OF THE SALARY IS =====",self.inhand_salary-self.gst+self.bonus)
+    
+x=employee(20000,20)
+x.cal_salary()
+y=fulltimeemployee(20000,20,5000,6000,8000)
+y.cal_salary()
