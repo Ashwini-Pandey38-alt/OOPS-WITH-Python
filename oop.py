@@ -588,3 +588,8 @@
 
 
 
+import json
+
+with open ('feedback.json','r') as f:
+    data=json.load(f)
+print(data)
