@@ -585,11 +585,13 @@
 # x.cal_salary()
 # y=fulltimeemployee(20000,20,5000,6000,8000)
 # y.cal_salary()
-
-
-
+ 
 import json
 
-with open ('feedback.json','r') as f:
+
+with open ("feedback.json",'r') as f:
     data=json.load(f)
+
+
 print(data)
+
