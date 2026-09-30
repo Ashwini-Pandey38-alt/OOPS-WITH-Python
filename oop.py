@@ -682,3 +682,8 @@ with open("names.txt", "r") as file:
     print(file.read())
 
 
+try:
+    with open("data.txt", "r") as file:
+        contents = file.read()
+except FileNotFoundError:
+    print("File not found!")
