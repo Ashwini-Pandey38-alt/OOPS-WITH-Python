@@ -585,13 +585,100 @@
 # x.cal_salary()
 # y=fulltimeemployee(20000,20,5000,6000,8000)
 # y.cal_salary()
- 
-import json
+# import json
 
 
-with open ("feedback.json",'r') as f:
-    data=json.load(f)
+# with open ("feedback.json",'r') as f:
+#     daa=json.load(f)
 
 
-print(data)
+# print(data)
+from abc import ABC ,abstractmethod
+class employee (ABC):
+    @abstractmethod
+    def cal_salary(self):
+        pass
+class intern(employee):
+
+    
+    def __init__(self,inhand,bonus,overtime):
+        self.inhand=inhand
+        self.bonus=bonus
+        self.overtime=overtime
+        
+
+    def cal_salary(self):
+        tax=(20//100)
+
+        print("calculated salary is ====",self.inhand+self.overtime+self.bonus-tax)
+
+        
+y=intern(50000,2000,5444)
+y.cal_salary()
+#calculated salary is ==== 57444
+class fulltime(employee):  
+     
+     def __init__(self,fixed_salary,bonus,overtime,helth_allowance):
+            self.fixed_salary=fixed_salary
+            self.bonus=bonus
+            self.overtime=overtime
+            self.helth_allowance=helth_allowance
+    
+     def cal_salary(self):
+        tax=(20//100)
+         
+            
+        print("calculated salary is ====",self.fixed_salary+self.overtime+self.bonus+self.helth_allowance-tax)
+         
+    
+            
+y=fulltime(50000,2000,5444,10000)
+y.cal_salary()
+
+class contract_based(employee):
+      def __init__(self,fixed_contract_salary,overtime,):
+            self.fixed_contract_salary=fixed_contract_salary
+            
+            self.overtime=overtime
+            
+    
+      def cal_salary(self):
+        tax=(20//100)
+         
+            
+        print("calculated salary is ====",self.fixed_contract_salary+self.overtime-tax)
+         
+    
+            
+y=contract_based(30000,2000)
+y.cal_salary()            
+
+'''Create a class player with a class variable player_count 
+instance variables name and level Track how many players were created.'''
+class player:
+    player_count=0
+    def __init__(self,name,level):
+        self.name=name
+        self.level=level
+        player.player_count+=1
+
+
+
+with open("names.txt", "w") as file:
+    for i in range(5):
+        file.write(input(f"Enter name {i+1}: ") + "\n")
+
+with open("names.txt", "r") as file:
+    print(file.read())
+
+
+
+# --- Q1 ---
+with open("names.txt", "w") as file:
+    for i in range(5):
+        file.write(input(f"Enter name {i+1}: ") + "\n")
+
+with open("names.txt", "r") as file:
+    print(file.read())
+
 
