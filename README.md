@@ -1,9 +1,25 @@
-# OOPS-WITH-Python
-using the oops (Object-Oriented Programming )in python
-# OOPs with Python
+# 🐍 Object-Oriented Programming with Python
 
-A beginner-friendly learning repository with Python examples and practice exercises for understanding object-oriented programming (OOP).
+A hands-on Python learning project exploring object-oriented programming (OOP) through code examples and practice exercises.
 
-The examples cover classes and objects, constructors, instance and class attributes, instance/class/static methods, encapsulation, inheritance, abstraction, and polymorphism. The file also includes exercises involving bank accounts, books, shapes, vehicles, employees, file handling, and JSON.
+## 📚 What I Practiced
 
-Use this repository as a study reference: read an example, uncomment or adapt it, and run it to explore the concept.
+- 🧱 Creating classes and objects
+- ⚙️ Using constructors, instance attributes, and class attributes
+- 🛠️ Writing instance, class, and static methods
+- 🔒 Applying encapsulation, inheritance, abstraction, and polymorphism
+- 🏦 Modeling examples such as bank accounts, books, shapes, vehicles, and employees
+- 📄 Reading data from text and JSON files
+
+## 📁 Repository Contents
+
+- `oop.py` — OOP examples, notes, and practice exercises
+- `feedback.json` — JSON data read by the script
+- `sample.txt` — Sample text file used in a file handling exercise
+
+## ▶️ Run the Code
+
+Requires Python 3. From the repository directory, run:
+
+```bash
+python oop.py
