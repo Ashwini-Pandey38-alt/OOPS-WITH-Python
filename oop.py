@@ -712,7 +712,7 @@ with open("log.txt", "r") as file:
 
 
 '''.
-Q4
+
 Create a program that:
 1. Has a list of numbers: 
 [5, 10, 15, 20, 25]
