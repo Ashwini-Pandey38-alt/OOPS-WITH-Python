@@ -687,4 +687,24 @@ try:
         contents = file.read()
 except FileNotFoundError:
     print("File not found!")
-    
+
+
+
+
+
+''' Create a program that:
+1. Opens a file  
+"log.txt"
+in append mode
+2. Adds a new log entry (like "Program run successfully")
+3. Opens the file in read mode and prints all logs'''
+
+
+with open("log.txt", "a") as file:
+    file.write("Program run successfully\n")
+
+
+with open("log.txt", "r") as file:
+    content = file.read()
+    print("--- Current Logs ---")
+    print(content)
